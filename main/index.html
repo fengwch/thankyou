@@ -14,7 +14,7 @@ body {
 	font-size: 25px;
 	color: #FFF;
 	font-family: "微软雅黑";
-	background: #f3961c;
+	background: #f59dac;
 }
 
 div {
@@ -23,7 +23,7 @@ div {
 
 .tittle {
 	width: 100%;
-	background: #f3961c;
+	background: #f59dac;
 	top: 0px;
 	height: 100%;
 	z-index: 0;
@@ -60,6 +60,14 @@ div {
 	cursor: pointer;
 	border-radius: 5px;
 }
+.bold{font-weight:bold;}
+.green{color:green;}
+.red{color:red;}
+.black{color:black;}
+.blue{color:blue;}
+.c08c{color:#08C;}
+.darkblue{color:#5389D6;}
+.white{color:white;}
 </style>
 <script type="text/javascript" src="./jscss/jquery.min.js"></script>
 <script>
@@ -70,7 +78,7 @@ div {
 $(document).ready(function(e) {
 	$(document).scrollTop(300); /*移动滚动条到最下方*/
 	t=1;
-	timer=setInterval("$.change()",3000);
+	timer=setInterval("$.change()",5000);
 	$("#t-"+t).fadeIn();
 	
 	$(document).click(
@@ -87,7 +95,7 @@ $(document).ready(function(e) {
 		console.log(t);
 		if(t<=$(".tittle").length){
 			$(".tittle").slideUp(1500).fadeOut();
-			$("#t-"+t).slideDown(1500).fadeIn();
+			$("#t-"+t).slideDown(2500).fadeIn();
 		}else{
 			localStorage["index"]="1";
 			}
@@ -102,10 +110,7 @@ $(document).ready(function(e) {
 		<div class="tittle" id="t-1" style="display: block;">
 			<table width="100%" border="0" height="100%">
 				<tbody><tr>
-					<td align="center"> 
-					<span class="big">在这个温暖的</span>地方<br>
-					<span class="big">充满关爱，温馨的</span>地方
-					</td>
+					<td align="center">您说“感谢你们选择玺佑作为宝宝人生中的<span class="big blue">第一个家</span>”！</td>
 				</tr>
 			</tbody></table>
 		</div>
@@ -113,7 +118,7 @@ $(document).ready(function(e) {
 		<div class="tittle" id="t-2" style="display: none;">
 			<table width="100%" border="0" height="100%">
 				<tbody><tr>
-					<td align="center">我想对<span class="big">玺 佑</span>说</td>
+					<td align="center">马上要离开了，<br/>心中除了丝丝的不舍，更多的还是<br/><span class="big red">满满的温暖</span>。</td>
 				</tr>
 			</tbody></table>
 		</div>
@@ -121,31 +126,48 @@ $(document).ready(function(e) {
 		<div class="tittle" id="t-3" style="">
 			<table width="100%" border="0" height="100%">
 				<tbody><tr>
-					<td align="center">
-						<span class="maxbig">玺 佑</span>
-						<br><span class="big">关爱、照顾
-						</span><br>
-						<br><span class="big">细心、负责
-						</span><br>
-						</td>
-					
+					<td align="center">感谢您们帮我们完成了人生中最重要的角色转换。</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-4" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center">感谢您们对宝宝及宝妈<br/><span class="big red">无微不至的照顾</span>。</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-5" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center">感谢您们安排丰富的产后课程，丰富我们的知识面。</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-6" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center">感谢您们在母乳喂养的路上给予的帮助跟指导。</td>
 				</tr>
 			</tbody></table>
 		</div>
 	</center>
 
-	<div class="tittle" id="t-4" style="">
+	<div class="tittle" id="t-7" style="">
 		<table width="100%" border="0" height="100%">
 			<tbody><tr>
-				<td align="center">我代表<span class="big">老婆与宝宝</span>致谢，并祝福</td>
+				<td align="center"><br><span class="big">您们的每一句<br/>“<span class="green">hello 宝妈</span>”<br/>“<span class="green">早晨</span>”<br/>“<span class="green">吃饭咯</span>”<br/>都让人感觉心情愉悦。</span></td>
 			</tr>
 		</tbody></table>
 	</div>
 
-	<div class="tittle" id="t-5" style="">
+	<div class="tittle" id="t-8" style="">
 		<table width="100%" border="0" height="100%">
 			<tbody><tr>
-				<td align="center"><br>玺 佑<span class="big">越办越好</span></td>
+				<td align="center"><br>感谢玺佑，感谢您们，出现在宝宝人生中的第一个家中，成为<br/><span class="big red">我们温暖的港湾。</span></td>
 			</tr>
 		</tbody></table>
 	</div>
